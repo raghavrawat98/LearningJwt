@@ -1,0 +1,291 @@
+{
+  "info": {
+    "_postman_id": "318fe010-25a1-42c9-a2f8-9cc494aabcac",
+    "name": "Just Getting Started",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "20719366",
+    "_collection_link": "https://go.postman.co/collection/20719366-318fe010-25a1-42c9-a2f8-9cc494aabcac?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Register-1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"rr_az_dev@test.com\",\r\n    \"password\": \"123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7196/api/Authentication/Register",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "api",
+            "Authentication",
+            "Register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register-2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"cs_dotnet_dev@test.com\",\r\n    \"password\": \"456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7196/api/Authentication/Register",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "api",
+            "Authentication",
+            "Register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login-1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"rr_az_dev@test.com\",\r\n    \"password\": \"123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7196/api/Authentication/Login",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "api",
+            "Authentication",
+            "Login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login-2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"cs_dotnet_dev@test.com\",\r\n    \"password\": \"456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7196/api/Authentication/Login",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "api",
+            "Authentication",
+            "Login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetWeatherForecastProtected",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7196/WeatherForecast/GetWeatherForecastProtected",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "WeatherForecast",
+            "GetWeatherForecastProtected"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetWeatherForecastPublic",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7196/WeatherForecast/GetWeatherForecastPublic",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "WeatherForecast",
+            "GetWeatherForecastPublic"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Logout-1",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"rr_az_dev@test.com\",\r\n    \"refreshToken\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7196/api/Authentication/Logout",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "api",
+            "Authentication",
+            "Logout"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Logout-2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"cs_dotnet_dev@test.com\",\r\n    \"refreshToken\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7196/api/Authentication/Logout",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "api",
+            "Authentication",
+            "Logout"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "RefreshToken",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"refreshToken\" : \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7196/api/Authentication/RefreshToken",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7196",
+          "path": [
+            "api",
+            "Authentication",
+            "RefreshToken"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
