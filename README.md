@@ -1,2 +1,4 @@
-# LearningJwt
-Just very basic code on how Jwt works. It follows a youtube tutorial but written in csharp. Real implementation will be highly abstracted and would require more configuration
+1. Create file `appsettings.Development.json`
+2. Set the correct dotnet version in `cs.proj`
+3. Update/Restore the nuget packages
+4. `creds.md` has been added in `.gitignore` to be created in ./Docs root level folder

@@ -427,3 +427,5 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+Just-GettingStarted-Jwt-Api/appsettings.Development.json
+Just-GettingStarted-Jwt-Api/Docs/creds.md
